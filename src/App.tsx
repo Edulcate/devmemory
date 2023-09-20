@@ -64,7 +64,6 @@ const App = () => {
 
 	useEffect(() => {
 		if (moveCount > 0 && gridItems.every(item => item.keepShowing)) {
-			console.log('teste');
 			setPlaying(false);
 
 		}
@@ -113,7 +112,6 @@ const App = () => {
 			setShownCount(shownCount + 1);
 		}
 
-
 	}
 
 	return (
@@ -136,7 +134,6 @@ const App = () => {
 						<GridItem
 							key={index}
 							item={item}
-							data-teste={item}
 							onClick={() => handleItemClick(index)}
 						/>
 					))}
